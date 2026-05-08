@@ -3,26 +3,23 @@
 # You state that the code submitted is wholly written by yourself. [1]
 # Date: 01/02/2025 [1]
 
-states = {
-    "red": 5,
-    "red_amber": 5,
-    "green": 2,
-    "amber": 4
-}
-
 systime = 0
 
 maxtime = int(input("Enter the number of steps that you want to complete: "))
 
 while systime <= maxtime:
+
     count = systime % 16
 
     if count < 5:
         state = "red"
+
     elif count < 10:
-        state = "red_amber"
+        state = "red-amber"
+
     elif count < 12:
         state = "green"
+
     else:
         state = "amber"
 
