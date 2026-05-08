@@ -2,20 +2,19 @@
 # Your student ID: 202028878 [1]
 # You state that the code submitted is wholly written by yourself. [1]
 # Date: 01/02/2025 [1]
-
 systime = 0
 
-maxtime = int(input("Enter the number of steps that you want to complete: "))
+maxtime = int(input())
 
 while systime <= maxtime:
 
-    count = systime % 16
+    count = systime % 15
 
-    if count < 5:
+    if count < 4:
         state = "red"
 
-    elif count < 10:
-        state = "red-amber"
+    elif count < 7:
+        state = "red_amber"
 
     elif count < 12:
         state = "green"
